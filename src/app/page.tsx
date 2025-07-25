@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Image from 'next/image'
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -11,12 +11,13 @@ export default function Home() {
             className="w-full h-full object-cover"
             width="vw"
             height="100%"
-            preload="none"
+            preload="auto"
             autoPlay
             loop
+            muted
           >
-            <source src="/videos/pangaea.mp4" type="video/mp4"/>
-            Enter the Pangaea 
+            <source src="/videos/pangaea.mp4" type="video/mp4" />
+            Enter the Pangaea
           </video>
         </div>
 
@@ -62,7 +63,6 @@ export default function Home() {
 
         {/*BODY*/}
         <div className="w-screen wrap-break-word">
-        
           {/*PAGE ONE*/}
           <div className="flex m-10 text-gray-400">
             <div className="max-w-2/5 p-10 justify-center">
@@ -95,22 +95,27 @@ export default function Home() {
           {/*PAGE TWO*/}
           <div className="flex m-10">
             <div className="max-w-1/2">
-              <p className="text-6xl font-extrabold max-w-4/5 m-5 text-white">IS NAIROBI THE NEW CAPTIAL OF AFROHOUSE?</p>
+              <p className="text-6xl font-extrabold max-w-4/5 m-5 text-white">
+                IS NAIROBI THE NEW CAPTIAL OF AFROHOUSE?
+              </p>
               <p className="m-5">
                 There&apos;s a quiet we&apos;ve grown accustomed to, a stillness
                 we&apos;ve cultivated in isolation. Waking dreams keep us from
                 falling at the seams. The stories go on because even if the
                 world stops turning on its usual axis, we don&apos;t stay still.
                 This blog chronicles this strange global metamorphosis from the
-                lens of creatives. 
+                lens of creatives.
               </p>
-              <p className="m-5">The images and narratives here prove
-                something precious in these times: No matter how transformed
-                beyond recognition, this new normal is Still Life.
+              <p className="m-5">
+                The images and narratives here prove something precious in these
+                times: No matter how transformed beyond recognition, this new
+                normal is Still Life.
               </p>
             </div>
             <div className="w-1/2 flex flex-col">
-              <p className="m-5 text-lime-300 self-center pt-5 pr-5 pb-10">ORIGINAL ARTICLES</p>
+              <p className="m-5 text-lime-300 self-center pt-5 pr-5 pb-10">
+                ORIGINAL ARTICLES
+              </p>
               <Image
                 src="/images/sarz.jpg"
                 width={500}
