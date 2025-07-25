@@ -85,8 +85,8 @@ export default function Home() {
               </p>
               <Image
                 src="/images/boilerroom.jpg"
-                width={500}
-                height={500}
+                width={700}
+                height={600}
                 alt="Picture of a lady weaving"
               />
             </div>
@@ -118,25 +118,40 @@ export default function Home() {
               </p>
               <Image
                 src="/images/sarz.jpg"
-                width={500}
+                width={600}
                 height={500}
                 alt="Picture of Sarz's Boiler Room"
                 className="self-start"
               />
             </div>
           </div>
-          <div>
-            <div>
-              <p>SUN EL MUSICIAN</p>
+
+          {/*PAGE THREE*/}
+          <div className="flex m-15">
+            <div className="w-1/2">
+              <p className="m-5 flex-end text-lime-300 italic">SUN EL MUSICIAN</p>
+              <Image
+                src="/images/blackCoffee.jpg"
+                width={500}
+                height={600}
+                alt="Picture of Black Coffee"
+                className="self-end"
+              />
             </div>
-            <div>
-              <p>SUNDAY SAMPLER</p>
-              <p>
+            <div className="w-1/2 m-5">
+              <p className="text-xl text-lime-300 pb-10">SUNDAY SAMPLER</p>
+              <p className="pb-10 max-w-3/5">
                 One creative deep dives into how the new normal changed her way
                 of working - and ultimately, her way of living. She tells us
                 about her great unmasking.
               </p>
-              <p> See playlist here </p>
+              <a 
+                href="https://open.spotify.com/playlist/1PscmEz8uvhuIKfJEWhNtJ?si=8717ff6a97c54ca3"
+                target="_blank"
+                className="margin-5 hover-underline-animation hover-scale"
+              > 
+                SEE PLAYLIST HERE 
+              </a>
             </div>
           </div>
           <div>
